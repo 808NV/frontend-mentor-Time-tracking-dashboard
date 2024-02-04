@@ -152,3 +152,7 @@ body {
 .card .light {
     margin-top: -15px;
 }
+
+.white {
+    color: white;
+}    
