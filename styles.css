@@ -124,10 +124,14 @@ body {
 }
 
 .card {
-    padding: 1em;
+    padding: 1em 2em;
     display: grid;
     gap: 1em;
-    margin-left: 1em;
+}
+
+.card:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
 }
 
 .flex {
@@ -139,6 +143,10 @@ body {
 
 .flex img {
     height: 5px;
+}
+
+.card .light {
+    margin-top: -15px;
 }
 
 .card .light {
