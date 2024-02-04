@@ -53,7 +53,7 @@ body {
 .user-info {
     background-color: var(--Blue);
     padding: 2em;
-    border-radius:  1em 1em 0em 0em;
+    border-radius: 1em 1em 0em 0em;
 }
 
 .user-info img {
@@ -145,8 +145,8 @@ body {
     height: 5px;
 }
 
-.card .light {
-    margin-top: -15px;
+.flex img:hover {
+    cursor: pointer;
 }
 
 .card .light {
