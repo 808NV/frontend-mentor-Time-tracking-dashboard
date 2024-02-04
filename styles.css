@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-red /*(work)*/: hsl(15, 100%, 70%);
+    --Soft-blue /*(play)*/: hsl(195, 74%, 62%);
+    --Light-red2 /*(study)*/: hsl(348, 100%, 68%);
+    --Lime-green /*(exercise)*/: hsl(145, 58%, 55%);
+    --Violet /*(social)*/: hsl(264, 64%, 52%);
+    --Soft-orange /*(self care)*/: hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.container {
+    width: 70em;
+}
+
+.gird-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.main-card {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    border-radius: 1em;
+}
+
+.user-info {
+    background-color: var(--Blue);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.user-info img {
+    height: 5em;
+    border: solid 3px white;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.light {
+    color: var(--Pale-Blue);
+}
+
+.large {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.time {
+    padding: 2em;
+    line-height: 2;
+    border-radius: 0em 0em 1em 1em;
+}
+
+.grid, .time {
+    background-color: var(--Dark-blue);
+   /* border-radius: 1em;*/
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    border-radius: 1em;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: end;
+    border-radius: 1em 1em 0px 0px;
+    padding-bottom: 2em;
+}
+
+.img-wrapper img {
+    margin-right: 1em;
+    height: 3em;
+}
+
+/* small cards colors*/
+
+.work {
+    background-color: var(--Light-red);
+}
+.exercise {
+    background-color: var(--Lime-green);
+}
+.play {
+    background-color: var(--Soft-blue);
+}
+.social {
+    background-color: var(--Violet);
+}
+.study {
+    background-color: var(--Light-red2);
+}
+.self-care {
+    background-color: var(--Soft-orange);
+}
+
+.card {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.flex img {
+    height: 5px;
+}
+
+.card .light {
+    margin-top: -15px;
+}
